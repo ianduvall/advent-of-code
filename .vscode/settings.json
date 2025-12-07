@@ -1,7 +1,9 @@
 {
 	"editor.codeActionsOnSave": {
-		"source.fixAll.oxc": "always"
+		"source.fixAll.oxc": "explicit",
+		"source.fixAll.ts": "explicit"
 	},
 	"editor.defaultFormatter": "oxc.oxc-vscode",
-	"oxc.fmt.experimental": true
+	"oxc.fmt.experimental": true,
+	"oxc.typeAware": true
 }
