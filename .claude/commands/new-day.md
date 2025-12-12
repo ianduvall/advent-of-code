@@ -26,12 +26,12 @@ import { describe, it, expect } from "vitest";
 import { part1, part2 } from "./solution";
 
 describe("day XX", () => {
-	const exampleInput = ``;
+	const exampleInput = ``.trim();
 	const input = readFileSync("./$1/dayXX/input.txt", "utf-8");
 
 	describe("part 1", () => {
 		it("part 1 example", () => {
-			expect(part1(exampleInput.trim())).toBe(0);
+			expect(part1(exampleInput)).toBe(0);
 		});
 
 		it("part 1 input", () => {
@@ -41,7 +41,7 @@ describe("day XX", () => {
 
 	describe("part 2", () => {
 		it("part 2 example", () => {
-			expect(part2(exampleInput.trim())).toBe(0);
+			expect(part2(exampleInput)).toBe(0);
 		});
 
 		it("part 2 input", () => {
