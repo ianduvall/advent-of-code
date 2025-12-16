@@ -14,9 +14,9 @@
 	"license": "ISC",
 	"packageManager": "pnpm@10.24.0",
 	"devDependencies": {
-		"@types/node": "^24.10.3",
+		"@types/node": "^24.10.4",
 		"oxfmt": "^0.16.0",
-		"oxlint": "^1.32.0",
+		"oxlint": "^1.33.0",
 		"oxlint-tsgolint": "^0.8.6",
 		"typescript": "^5.9.3",
 		"vitest": "^4.0.15"
