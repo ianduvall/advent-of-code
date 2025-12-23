@@ -1,0 +1,46 @@
+import { readFileSync } from "node:fs";
+import { describe, it, expect } from "vitest";
+
+import { part1, part2 } from "./solution";
+
+describe("day 07", () => {
+	const exampleInput = `
+.......S.......
+...............
+.......^.......
+...............
+......^.^......
+...............
+.....^.^.^.....
+...............
+....^.^...^....
+...............
+...^.^...^.^...
+...............
+..^...^.....^..
+...............
+.^.^.^.^.^...^.
+...............
+`.trim();
+	const input = readFileSync("./2025/day07/input.txt", "utf-8");
+
+	describe("part 1", () => {
+		it("part 1 example", () => {
+			expect(part1(exampleInput)).toBe(21);
+		});
+
+		it("part 1 input", () => {
+			expect(part1(input)).toBe(1499);
+		});
+	});
+
+	describe("part 2", () => {
+		it("part 2 example", () => {
+			expect(part2(exampleInput)).toBe(40);
+		});
+
+		it("part 2 input", () => {
+			expect(part2(input)).toBe(24743903847942);
+		});
+	});
+});
